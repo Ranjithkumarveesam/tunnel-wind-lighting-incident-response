@@ -41,20 +41,7 @@ The program uses only the Python standard library. Adjust assumptions with --tur
 
 ## System boundary
 
-~~~mermaid
-flowchart LR
-  V[Passing vehicles] -->|transient airflow| T[Guarded turbine array]
-  T --> R[Rectifier and wind charge controller]
-  R --> B[Protected storage and metered low-voltage DC bus]
-  B --> L[Supplementary LED branch]
-  B --> M[Non-critical monitor branch, only if measured surplus exists]
-  C[Camera and edge inference] --> E[Candidate event with timestamp and location]
-  E --> O[Control-room review]
-  O -->|approved emergency procedure| S[Authorized responders]
-  F[Independent approved fire detection] --> P[Certified tunnel safety PLC / operator]
-  P --> X[Pre-engineered smoke-control and suppression systems]
-  G[Existing approved utility / UPS / emergency supply] --> Q[Required lighting, safety systems, and control room]
-~~~
+![Tunnel traffic-wind energy and safety-system schematic](docs/tunnel_system_diagram.svg)
 
 The harvested-energy branch is supplementary. It does not replace the tunnel's required power, lighting, fire alarm, smoke-control, or emergency communications systems. The AI path has no direct connection to those safety-critical outputs.
 
