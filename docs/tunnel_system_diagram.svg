@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="850" viewBox="0 0 1600 850" role="img" aria-labelledby="title description">
+  <title id="title">Tunnel traffic-wind energy and safety system boundary</title>
+  <desc id="description">Vehicle-induced airflow drives a guarded turbine and generator. Conditioned energy feeds a protected battery and metered low-voltage bus for a supplementary light and non-critical logger. A separate approved tunnel power and safety-control system serves required lighting, fire detection, the safety PLC, ventilation, firefighting equipment, and operator-reviewed emergency response.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L10,5 L0,10 z" fill="#334155"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#172033}
+      .title{font-size:30px;font-weight:700}
+      .subtitle{font-size:16px;fill:#475569}
+      .section{font-size:18px;font-weight:700;letter-spacing:.4px}
+      .box{stroke-width:2;rx:12;ry:12}
+      .energy{fill:#e0f2fe;stroke:#0369a1}
+      .safety{fill:#ecfdf5;stroke:#047857}
+      .label{font-size:15px;font-weight:600;text-anchor:middle}
+      .small{font-size:13px;text-anchor:middle;fill:#475569}
+      .line{fill:none;stroke:#334155;stroke-width:2.5;marker-end:url(#arrow)}
+      .boundary{stroke:#b91c1c;stroke-width:2.5;stroke-dasharray:10 8}
+      .boundaryText{font-size:14px;font-weight:700;fill:#991b1b;text-anchor:middle}
+      .footer{font-size:14px;fill:#475569;text-anchor:middle}
+    </style>
+  </defs>
+  <rect width="1600" height="850" fill="#ffffff"/>
+  <text x="40" y="48" class="title">Tunnel Traffic-Wind Energy and Safety Boundary</text>
+  <text x="40" y="78" class="subtitle">Concept-level architecture • energy recovery is supplementary • site measurements and engineering approval are required</text>
+
+  <text x="40" y="120" class="section" fill="#075985">A. VEHICLE-AIRFLOW HARVESTING — LOW-VOLTAGE AUXILIARY BUS</text>
+  <rect x="30" y="145" width="165" height="100" class="box energy"/>
+  <text x="112" y="183" class="label"><tspan x="112">Vehicle-induced</tspan><tspan x="112" dy="21">tunnel airflow</tspan></text>
+  <rect x="230" y="145" width="165" height="100" class="box energy"/>
+  <text x="312" y="183" class="label"><tspan x="312">Guarded turbine</tspan><tspan x="312" dy="21">rotor and bearings</tspan></text>
+  <rect x="430" y="145" width="180" height="100" class="box energy"/>
+  <text x="520" y="173" class="label"><tspan x="520">Permanent-magnet</tspan><tspan x="520" dy="21">generator</tspan><tspan x="520" dy="19" class="small">matched speed range</tspan></text>
+  <rect x="650" y="145" width="205" height="100" class="box energy"/>
+  <text x="752" y="171" class="label"><tspan x="752">Matched rectifier</tspan><tspan x="752" dy="20">and wind controller</tspan><tspan x="752" dy="19" class="small">overspeed / diversion protection</tspan></text>
+  <rect x="895" y="145" width="200" height="100" class="box energy"/>
+  <text x="995" y="174" class="label"><tspan x="995">Protected storage</tspan><tspan x="995" dy="21">battery + BMS</tspan><tspan x="995" dy="19" class="small">disconnect and protection</tspan></text>
+  <rect x="1135" y="145" width="170" height="100" class="box energy"/>
+  <text x="1220" y="184" class="label"><tspan x="1220">Metered</tspan><tspan x="1220" dy="21">low-voltage DC bus</tspan></text>
+  <rect x="1345" y="145" width="220" height="100" class="box energy"/>
+  <text x="1455" y="174" class="label"><tspan x="1455">Fused DC LED driver</tspan><tspan x="1455" dy="21">supplementary tunnel</tspan><tspan x="1455" dy="19">light segment</tspan></text>
+  <path d="M195 195 H225" class="line"/><path d="M395 195 H425" class="line"/><path d="M610 195 H645" class="line"/><path d="M855 195 H890" class="line"/><path d="M1095 195 H1130" class="line"/><path d="M1305 195 H1340" class="line"/>
+  <path d="M1220 245 V278" class="line"/>
+  <rect x="1080" y="290" width="280" height="72" class="box energy"/>
+  <text x="1220" y="320" class="label"><tspan x="1220">Separately fused, non-critical logger</tspan><tspan x="1220" dy="21" class="small">airflow, Wh, temperature, vibration</tspan></text>
+
+  <path d="M25 405 H1575" class="boundary"/>
+  <rect x="390" y="386" width="820" height="36" fill="#ffffff"/>
+  <text x="800" y="410" class="boundaryText">NO CONNECTION FROM HARVESTED BUS TO REQUIRED LIGHTING OR SAFETY ACTUATORS</text>
+
+  <text x="40" y="458" class="section" fill="#047857">B. INDEPENDENT APPROVED TUNNEL SAFETY AND INCIDENT-RESPONSE SYSTEMS</text>
+  <rect x="30" y="500" width="205" height="100" class="box safety"/>
+  <text x="132" y="538" class="label"><tspan x="132">Approved utility / UPS</tspan><tspan x="132" dy="21">emergency distribution</tspan></text>
+  <rect x="285" y="500" width="210" height="100" class="box safety"/>
+  <text x="390" y="538" class="label"><tspan x="390">Required tunnel</tspan><tspan x="390" dy="21">lighting</tspan></text>
+  <path d="M235 550 H280" class="line"/>
+
+  <rect x="285" y="650" width="210" height="100" class="box safety"/>
+  <text x="390" y="688" class="label"><tspan x="390">Independent approved</tspan><tspan x="390" dy="21">fire detection</tspan></text>
+  <rect x="555" y="575" width="220" height="110" class="box safety"/>
+  <text x="665" y="614" class="label"><tspan x="665">Certified tunnel</tspan><tspan x="665" dy="21">safety PLC / SCADA</tspan><tspan x="665" dy="20" class="small">validated sequences only</tspan></text>
+  <path d="M495 700 H525 V630 H550" class="line"/>
+  <path d="M235 575 H255 V625 H550" class="line"/>
+
+  <rect x="835" y="500" width="230" height="100" class="box safety"/>
+  <text x="950" y="538" class="label"><tspan x="950">Approved ventilation /</tspan><tspan x="950" dy="21">smoke-control sequence</tspan></text>
+  <rect x="835" y="650" width="230" height="100" class="box safety"/>
+  <text x="950" y="688" class="label"><tspan x="950">Approved fixed</tspan><tspan x="950" dy="21">firefighting system</tspan></text>
+  <path d="M775 605 H805 V550 H830" class="line"/><path d="M775 655 H805 V700 H830" class="line"/>
+
+  <rect x="1105" y="500" width="210" height="100" class="box safety"/>
+  <text x="1210" y="538" class="label"><tspan x="1210">CCTV / AI candidate</tspan><tspan x="1210" dy="21">event only</tspan><tspan x="1210" dy="19" class="small">no automatic action</tspan></text>
+  <rect x="1360" y="500" width="205" height="100" class="box safety"/>
+  <text x="1462" y="538" class="label"><tspan x="1462">Control-room</tspan><tspan x="1462" dy="21">human review</tspan></text>
+  <path d="M1315 550 H1355" class="line"/>
+  <rect x="1360" y="650" width="205" height="100" class="box safety"/>
+  <text x="1462" y="688" class="label"><tspan x="1462">Authorized responder</tspan><tspan x="1462" dy="21">notice per incident plan</tspan></text>
+  <path d="M1462 600 V645" class="line"/>
+
+  <text x="800" y="815" class="footer">Research schematic only — not a construction drawing, certified safety design, AI model, dispatch integration, or actuator-control implementation.</text>
+</svg>
