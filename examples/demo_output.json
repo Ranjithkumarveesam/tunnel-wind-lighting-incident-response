@@ -1,0 +1,38 @@
+{
+  "status": "illustrative assumptions; not measured tunnel output",
+  "assumptions": {
+    "turbines": 8,
+    "vehicles_per_day": 1000,
+    "air_speed_m_s": 6.0,
+    "pulse_seconds_per_vehicle": 10.0,
+    "swept_area_m2": 0.25,
+    "air_density_kg_m3": 1.2,
+    "power_coefficient": 0.25,
+    "generator_efficiency": 0.75,
+    "converter_efficiency": 0.9,
+    "led_w": 12.0,
+    "led_h_per_day": 4.0,
+    "camera_w": 5.0,
+    "edge_compute_w": 8.0
+  },
+  "turbine_estimate": {
+    "air_power_per_turbine_during_pulse_w": 32.4,
+    "dc_output_per_turbine_during_pulse_w": 5.4675,
+    "energy_per_vehicle_per_turbine_wh": 0.015187,
+    "gross_array_energy_wh_per_day": 121.5
+  },
+  "example_load_wh_per_day": {
+    "supplementary_led": 48.0,
+    "camera": 120.0,
+    "edge_compute": 192.0,
+    "total": 360.0,
+    "gross_energy_fraction_before_losses": 0.3375
+  },
+  "not_included": [
+    "measured tunnel velocity time series",
+    "battery, wiring, standby, and downtime losses",
+    "turbine interaction and ventilation effects",
+    "incremental vehicle propulsion energy",
+    "safety margin or emergency-power sizing"
+  ]
+}
