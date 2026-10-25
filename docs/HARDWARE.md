@@ -6,39 +6,13 @@ This is a **system block diagram for research and low-voltage concept discussion
 
 ## Energy-harvesting branch
 
-~~~mermaid
-flowchart LR
-  A[Vehicle-induced airflow] --> B[Guarded turbine rotor]
-  B --> C[Permanent-magnet generator]
-  C --> D[3-phase bridge rectifier, if generator is AC]
-  D --> E[Wind-rated charge controller and overvoltage / diversion protection]
-  E --> F[Protected battery with BMS and DC disconnect]
-  F --> G[Metered low-voltage DC bus]
-  G --> H[Branch fuse / breaker]
-  H --> I[DC LED driver]
-  I --> J[Supplementary LED segment]
-  G --> K[Separately fused, non-critical data logger]
-  K --> L[Wh meter, airflow, temperature, vibration sensors]
-~~~
+![Tunnel traffic-wind energy and safety-system schematic](tunnel_system_diagram.svg)
 
 Actual generator topology may differ. If the generator's output is not three-phase AC, the rectifier and controller must match that generator. A normal solar-only controller may not be suitable for a wind generator, especially when unloaded or at overspeed; select a controller and diversion arrangement for the actual turbine.
 
 ## Separate tunnel safety systems
 
-~~~mermaid
-flowchart LR
-  U[Approved utility / UPS / emergency distribution] --> LT[Required tunnel lighting]
-  U --> CAM[Operator-approved CCTV / edge monitor]
-  U --> FD[Independent approved fire detection]
-  U --> PLC[Certified tunnel safety PLC / SCADA]
-  FD --> PLC
-  CAM -->|candidate event only| CR[Control-room review]
-  PLC --> V[Pre-engineered ventilation / smoke-control sequence]
-  PLC --> W[Approved fixed firefighting system]
-  CR -->|approved emergency plan| R[Emergency-service notification]
-  G[Harvested-energy DC bus] -. no safety-critical connection .-> LT
-  G -. no actuator control .-> PLC
-~~~
+The lower half of the SVG separates the approved tunnel systems. Camera or AI output remains a candidate for control-room review; responder contact and any fan or firefighting action follow the approved tunnel emergency plan and certified safety controls.
 
 The dashed relationships indicate prohibited direct reliance/control in this demonstrator. In a real tunnel, only the approved electrical and control-system design can define any connection.
 
